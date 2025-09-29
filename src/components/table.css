@@ -1,0 +1,158 @@
+.menu-container {
+  background-color: #383838;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.menu-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c1810;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.meals-list {
+  margin-top: 40px;
+}
+
+.meal-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.meal-item:last-child {
+  border-bottom: none;
+}
+
+.meal-info {
+  flex: 1;
+}
+
+.meal-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2c1810;
+  margin: 0 0 8px 0;
+}
+
+.meal-description {
+  font-style: italic;
+  color: #666;
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+}
+
+.meal-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #8b4513;
+  margin: 0;
+}
+
+.meal-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.amount-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.amount-controls label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2c1810;
+}
+
+.amount-input {
+  width: 60px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.amount-input:focus {
+  outline: none;
+  border-color: #8b4513;
+  box-shadow: 0 0 0 2px rgba(139, 69, 19, 0.2);
+}
+
+.add-button {
+  background-color: #8b4513;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-button:hover {
+  background-color: #a0522d;
+}
+
+.add-button:active {
+  background-color: #654321;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .menu-card {
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .meal-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .meal-controls {
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .amount-controls {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .add-button {
+    width: 100%;
+  }
+}
