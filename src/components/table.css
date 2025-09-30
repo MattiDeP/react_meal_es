@@ -20,26 +20,26 @@
   font-weight: bold;
   color: #2c1810;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .menu-subtitle {
   font-size: 1.1rem;
   color: #666;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   line-height: 1.6;
 }
 
 .meals-list {
-  margin-top: 40px;
+  margin-top: 12px;
 }
 
 .meal-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 12px 0;
   border-bottom: 1px solid #e0e0e0;
 }
 

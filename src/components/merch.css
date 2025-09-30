@@ -1,0 +1,46 @@
+.merch-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 50vh;
+}
+
+.merch-container form {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	width: 100%;
+	max-width: 320px;
+	background: #ffffff;
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+	padding: 16px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.merch-container input[type="text"] {
+	padding: 10px 12px;
+	border: 1px solid #d1d5db;
+	border-radius: 6px;
+	font-size: 14px;
+}
+
+.merch-container input[type="text"]:focus {
+	outline: none;
+	border-color: #6366f1;
+	box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.merch-container button[type="submit"] {
+	padding: 10px 12px;
+	border: none;
+	border-radius: 6px;
+	background: #6366f1;
+	color: white;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.merch-container button[type="submit"]:hover {
+	background: #4f46e5;
+}

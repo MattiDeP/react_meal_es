@@ -1,12 +1,12 @@
-import Header from './components/Header.tsx';
-import MenuTable from './components/table.tsx';
+import Header from './components/Header';
+import AppRouter from './AppRouter';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <MenuTable />
+      <AppRouter />
     </div>
   );
 }
