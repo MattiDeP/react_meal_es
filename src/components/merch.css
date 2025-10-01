@@ -11,18 +11,21 @@
 	gap: 12px;
 	width: 100%;
 	max-width: 320px;
-	background: #ffffff;
-	border: 1px solid #e5e7eb;
+	background: var(--surface);
+	border: 1px solid var(--card-border);
 	border-radius: 8px;
 	padding: 16px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+	box-shadow: 0 4px 12px var(--shadow);
+	color: var(--surface-contrast);
 }
 
 .merch-container input[type="text"] {
 	padding: 10px 12px;
-	border: 1px solid #d1d5db;
+	border: 1px solid var(--input-border);
 	border-radius: 6px;
 	font-size: 14px;
+	color: var(--surface-contrast);
+	background: var(--surface);
 }
 
 .merch-container input[type="text"]:focus {

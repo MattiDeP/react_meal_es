@@ -1,14 +1,19 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useUser } from '../context/UserContext';
 import './login.css';
 
 function Login() {
   const [username, setUsername] = useState('');
   const navigate = useNavigate();
+  const { login } = useUser();
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    navigate('/profile', { state: { username } });
+    if (username.trim().length > 0) {
+      login(username.trim());
+      navigate('/profile');
+    }
   }
 
   return (

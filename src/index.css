@@ -65,3 +65,35 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+body.theme-light {
+  --bg-color: #ffffff;
+  --text-color: #213547;
+  --button-bg: #f9f9f9;
+  --button-text: #213547;
+  --surface: #ffffff;
+  --surface-contrast: #213547;
+  --muted-text: #666666;
+  --card-border: #e5e7eb;
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --primary-contrast: #ffffff;
+  --input-border: #d1d5db;
+  --shadow: rgba(0, 0, 0, 0.06);
+}
+
+body.theme-dark {
+  --bg-color: #242424;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --button-bg: #1a1a1a;
+  --button-text: rgba(255, 255, 255, 0.87);
+  --surface: #1e1e1e;
+  --surface-contrast: rgba(255, 255, 255, 0.92);
+  --muted-text: #aaaaaa;
+  --card-border: #333333;
+  --primary: #8b9bff;
+  --primary-hover: #7487ff;
+  --primary-contrast: #111111;
+  --input-border: #444444;
+  --shadow: rgba(0, 0, 0, 0.4);
+}

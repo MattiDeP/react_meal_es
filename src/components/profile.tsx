@@ -1,13 +1,12 @@
-import { useLocation } from 'react-router-dom';
+import { useUser } from '../context/UserContext';
 
 function Profile() {
-  const location = useLocation();
-  const username = (location.state as { username?: string } | null)?.username;
+  const { user } = useUser();
 
   return (
     <div>
       <h1>Login effettuato!</h1>
-      <p>Benvenuto nel tuo profilo, {username ? ` ${username}` : ''}!</p>
+      <p>Benvenuto nel tuo profilo, {user ? ` ${user.name}` : ''}!</p>
     </div>
   );
 }
