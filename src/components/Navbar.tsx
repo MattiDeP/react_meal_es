@@ -14,13 +14,15 @@ const Navbar = () => {
           <h1>React Meal</h1>
         </div>
         <button onClick={() => navigate('/')}>Home</button>
-        <button onClick={() => navigate('/merch')}>Merchandising</button>    
+        <button onClick={() => navigate('/merch')}>Merchandising</button>   
+        <button onClick={() => navigate('/ins_merch')}>Nuovo merch</button>   
         <button onClick={toggleTheme}>{theme === 'light' ? 'Tema scuro' : 'Tema chiaro'}</button>   
         {user ? (
           <span>{`Ciao, ${user.name}`}</span>
         ) : (
           <button onClick={() => navigate('/login')}>Accedi</button>
         )}
+        <button onClick={() => navigate('/signup')}>Registrati</button>
         <div className="navbar-cart">
           <button className="cart-button">
             <span>Your Cart</span>
